@@ -6,7 +6,7 @@ Development board for QT Py ESP32-S2 projects using Qwiik connected modules (Ada
 # HARDWARE
 
 
-The main board accommodates the following modules
+## THE MAIN BOARD CONTAINS THE FOLLOWING HARDWARE
 - Adafruit ESP32-S2 (and S3) processor (socketed: compute)
 - Adafruit microSD Card BFF modules (socketed: storage)
 - Adafruit LiIon Charger BFF module (socketed: power)
@@ -17,6 +17,42 @@ The main board accommodates the following modules
 - Any Qwiik connected device, they can be daisy chained or tied
   in with Adafruit Qwiik/STEMMA QT 5 Port hub or Adafruit 
   STEMMA QT/Qwiik I2C multiplexer.
+
+## CircuitPython MODULES FOR HARDWARE INCLUDE
+- i2c       (stemma qt and onboard)
+- neopixel  (onboard indicator)
+- aht20     (temp and humidity)
+- sht40     (temp and humidity)
+- bme280    (temp, humidity, pressure, and altitude)
+- bme680    (temp, humidity, pressure, altitude, and voc/gas)
+- ds3231    (timestamp, set via NTP)
+- wifi      (if present)
+- lc709203f (feather2 s2/s3)
+- ina260    (option for testing)
+- 24lc32    (4kB EEPROM on the DS3231)
+- soil_probe (separate probe; power and analog input)
+- battery    (external battery voltage monitor...useful for solar chargers)
+
+The code accommodates adding hardware, detecting it, and using it automatically
+It also allows the hardware to be on existing I2C pins or a STEMMA QT connector.
+
+A typical hardware module initializes and readies the sensor, handles reading
+values and making them ready for the main code.
+
+The main code can upload values via WiFi or LoRa; modules exist for each.
+
+**This code was built for CircuitPython 8 and upgraded for version 9.
+
+## QtPy ESP32-S2
+![QT Py ESP32-S2](https://www.adafruit.com/product/5325)
+
+>>> dir(board)
+['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7',
+'BOOT0', 'BUTTON', 'D0', 'D16', 'D17', 'D18', 'D35', 'D36', 'D37', 'D40',
+'D41', 'D5', 'D6', 'D7', 'D8', 'D9', 'I2C', 'MISO', 'MOSI', 'NEOPIXEL',
+'NEOPIXEL_POWER', 'RX', 'SCK', 'SCL', 'SCL1', 'SDA', 'SDA1', 'SPI',
+'STEMMA_I2C', 'TX', 'UART', 'board_id']
+>>>
 
 # BASIC OPERATION OF THE POWER SYSTEM
 
@@ -113,37 +149,39 @@ MODULES AND METHODS
   functions, were refactored into python modules. Most notably code
   supporting the Adafruit sensors. The following tables list the modules
   and their methods. All modules of this type are given the mod_ prefix.
+  
    
                  ADAFRUIT ENVIRONMENTAL SENSORS (mod_x)
- ---------------------------------------------------------		
-  METHOD	ahtx0	sht40	bme280	bme680	ina260	ds3231	
-   init			X		X		X		X		X		X	
-   set													X	
-   read			X		X		X		X		X		X	
+ 		
+  | METHOD | ahtx0 | sht40 | bme280 | bme680 | ina260 | ds3231 |
+  |--------|-------|-------|--------|--------|--------|--------|
+  | init	 |   X   |   X   |    X   |    X   |    X   |    X   |	
+  | set		 |       |       |        |        |        |    X   |
+  | read	 |	 X	 |	 X	 |    X   |    X   |    X   |    X	 |
    
                CUSTOM ENVIRONMENTAL SENSORS (mod_x)
- ---------------------------------------------------------		
-  METHOD		soil_probe	battery_voltage
-  init				X				X		
-  set										
-  read				X				X		
-  get_voltage		X				X
+ 	
+  | METHOD     | soil_probe | battery_voltage |
+  |------------|------------|-----------------|
+  | init       |    X       |    X            |
+  | set	       |            |                 |
+  | read       |    X       |    X            |
+  |get_voltage |   X        |    X            |
   				
                         OTHER MODULES (mod_x)
- ---------------------------------------------------------		
-  METHOD			i2c		24lc32	neopixel diag
-  init				 X			X
-  set							X
-  read							X
-  power_pixel							X
-  connected_health						X
-  no_sensors							X
-  reset_reason								  X
+
+  | METHOD           | i2c      | 24lc32   | neopixel  | diag     |
+  |------------------|----------|----------|-----------|----------|
+  | init             |   X      |   X      |           |          |
+  | set              |          |   X      |           |          |
+  | read             |          |   X      |           |          |
+  | power_pixel      |          |          |   X       |          |
+  | connected_health |          |          |   X       |          |
+  | no_sensors       |          |          |   X       |          |
+  | reset_reason     |          |          |           |  X       |
   
 
-=======================================================================
-=========================== FUTURE WORK ===============================
-=======================================================================
+# FUTURE WORK
 
   But wait, there's more. There is functionality in code.py that 
   connects the QT Py to a MQTT broker living on a Raspberry Pi 
