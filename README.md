@@ -1,4 +1,4 @@
-# QyPyESP32-S2-DevBoard
+# QtPyESP32-S2-DevBoard
 
 Development board for QT Py ESP32-S2 projects using Qwiik connected modules (Adafruit style). This document describes the Adafruit QT Py ESP32-S2 development board, Version 1. Originally developed to be a leak detection system. Repurposed as a general purpose development system useful for developing other IoT applications.
 
