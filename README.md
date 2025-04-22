@@ -111,7 +111,7 @@ There are two onboard LEDS used to monitor the operation of the TPL5110.
     kill power to the QT Py.
 
 ## BOARD HEADERS
-
+![Motherboard_routed_v1](https://github.com/user-attachments/assets/e84f69ad-aaf6-4419-a646-7981aaeb460d)
 - Test Points SYSTEM GND
               QT Py 3V
               QT PY 5V
@@ -124,16 +124,25 @@ There are two onboard LEDS used to monitor the operation of the TPL5110.
 - LoRa EN or G0 select, if used, jumper from the common pin to your selection.
   
 - RESET, add header pins or solder wires to an external switch that allows the TPL5110 to be triggered, just like using the onboard switch. This is to facilitate buttoning up the board in a box.
+
+## SCHEMATIC
+![devboard_schematic](https://github.com/user-attachments/assets/c0fee5d6-2de6-4f86-830f-009a4e0d97c0)
+
+## ROUTING
+![devboard_board](https://github.com/user-attachments/assets/6de4a6ff-e7ad-4b3b-9646-4ba0055cca2b)
               
-QT STEMMA Cable wiring:
-- YELLOW --- BLACK  GROUND
-- BLUE ----- RED  V+  (3-5V)
-- RED ------ BLUE  SDA (data)
-- BLACK ---- YELLOW  SCL (clock)
+## QT STEMMA Cable
+
+  | Qwikk STEMMA Cable |
+  |--------------------|
+  | ![Qwiik_STEMMA_cable](https://github.com/user-attachments/assets/32dc17ca-90d4-477e-ba67-1c1820f1c53c)|
+
+- BLACK  GROUND
+- RED  V+  (3-5V)
+- BLUE  SDA (data)
+- YELLOW  SCL (clock)
   
-
 # SOFTWARE
-
 
 ## CODE OVERVIEW
 
