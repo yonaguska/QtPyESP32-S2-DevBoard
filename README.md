@@ -14,9 +14,11 @@ Development board for QT Py ESP32-S2 projects using Qwiik connected modules (Ada
 - TPL5110 Low Power Timer Breakout (socketed: power control)
 - Lipo Charger (soldered: solar or USB power in)
 - LoRa (socket only)
-- Any Qwiik connected device, they can be daisy chained or tied
-  in with Adafruit Qwiik/STEMMA QT 5 Port hub or Adafruit 
-  STEMMA QT/Qwiik I2C multiplexer.
+- Any Qwiik connected device, they can be daisy chained or tied in with Adafruit Qwiik/STEMMA QT 5 Port hub or Adafruit STEMMA QT/Qwiik I2C multiplexer.
+- And there's a 4000mAh Lipo Battery tucked under the development board, strapped onto the base plate
+
+### LiPo 4000mAh
+![big_lipo](https://github.com/user-attachments/assets/93fde174-d9cb-4ef2-896b-2c65c9b8b19a)
 
 ## CircuitPython MODULES FOR HARDWARE INCLUDE
 - i2c       (stemma qt and onboard)
