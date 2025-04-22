@@ -213,7 +213,7 @@ MODULES AND METHODS
   has a web page interface found on the port conventionally used by
   it.
   
-  I will leave it to you to read about these subsystems, of you want
+  I will leave it to you to read about these subsystems, if you want
   to learn the nitty gritty of how to use them to build a nifty
   monitoring system. 
    
@@ -227,5 +227,5 @@ CircuitPython Scripts
 Github for yonaguska (me)
 
   https://github.com/yonaguska/QtPy_ESP32-S2
-
-This be a new line
+ 
+Adding this line 
