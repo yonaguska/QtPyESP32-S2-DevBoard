@@ -39,7 +39,7 @@ Development board for QT Py ESP32-S2 projects using Qwiik connected modules (Ada
 
 | Soil Probe    | BME680        | BFF LiPo Conn| Batt Monitor   | QtPy to Brd   | Test Points   |
 |---------------|---------------|---------------|---------------|---------------|---------------|
-| ![soil_moisture_detector](https://github.com/user-attachments/assets/3d8ec207-8e4a-4253-9d5b-6656d79c7ac4| ![bme680](https://github.com/user-attachments/assets/3b5c076a-b7cd-4c1b-8d07-61b380ec3ba7)| ![bff_lipo_connector](https://github.com/user-attachments/assets/7fb17d11-f876-4950-9a34-def3e16dc451)| ![monitored_battery_connector](https://github.com/user-attachments/assets/51e9c516-6eec-4c05-93b9-3079225d4b45)| ![qtpy_to_board_qwiik_connection](https://github.com/user-attachments/assets/c375552e-94bc-470d-b216-b53053bd7008)| ![test_points](https://github.com/user-attachments/assets/7c40e494-5bac-458b-b12e-10a01efabb1d)|
+| ![soil_moisture_detector](https://github.com/user-attachments/assets/f083d882-83ca-429c-97a5-d0cf2d38b0e1)| ![bme680](https://github.com/user-attachments/assets/3b5c076a-b7cd-4c1b-8d07-61b380ec3ba7)| ![bff_lipo_connector](https://github.com/user-attachments/assets/7fb17d11-f876-4950-9a34-def3e16dc451)| ![monitored_battery_connector](https://github.com/user-attachments/assets/51e9c516-6eec-4c05-93b9-3079225d4b45)| ![qtpy_to_board_qwiik_connection](https://github.com/user-attachments/assets/c375552e-94bc-470d-b216-b53053bd7008)| ![test_points](https://github.com/user-attachments/assets/7c40e494-5bac-458b-b12e-10a01efabb1d)|
 
 
 
