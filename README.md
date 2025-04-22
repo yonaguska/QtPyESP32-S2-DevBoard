@@ -227,9 +227,5 @@ CircuitPython Scripts
 Github for yonaguska (me)
 
   https://github.com/yonaguska/QtPy_ESP32-S2
-  
 
-
-  
-
-  
+This be a new line
