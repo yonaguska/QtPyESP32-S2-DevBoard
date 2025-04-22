@@ -4,10 +4,10 @@ Development board for QT Py ESP32-S2 projects using Qwiik connected modules (Ada
 
 
 # HARDWARE
-
+![circuit_front](https://github.com/user-attachments/assets/48aa1013-5699-4383-acf4-c0b02afc871c)
 
 ## THE MAIN BOARD CONTAINS THE FOLLOWING HARDWARE
-- Adafruit ESP32-S2 (and S3) processor (socketed: compute)
+- Adafruit ESP32-S2 (and S3) processor (socketed: compute) 
 - Adafruit microSD Card BFF modules (socketed: storage)
 - Adafruit LiIon Charger BFF module (socketed: power)
 - DS3231 w/EEPROM (soldered: realtime clock & storage)
@@ -32,6 +32,19 @@ Development board for QT Py ESP32-S2 projects using Qwiik connected modules (Ada
 - 24lc32    (4kB EEPROM on the DS3231)
 - soil_probe (separate probe; power and analog input)
 - battery    (external battery voltage monitor...useful for solar chargers)
+
+| QT Py ESP21-S | SD Card       |   LiPo BFF    | DS231/EEPROM  |  TPL5110      |  Lipo Charger |
+|---------------|---------------|---------------|---------------|---------------|---------------|
+| ![onboard_qt_py_esp32-s2](https://github.com/user-attachments/assets/f864b3e2-97d7-4365-92f3-48f809b64ab8)| ![onboard_sd_card](https://github.com/user-attachments/assets/4164b69a-bad4-46fe-b729-8cbbb459d683)| ![onboard_lipo_bff](https://github.com/user-attachments/assets/df41f840-c197-46d6-b28f-42262cf5f1ba)| ![onboard_ds3231](https://github.com/user-attachments/assets/2fbe5cc8-6fcf-49b9-98c0-46ab0ccb2d06)| ![onboard_tpl5110](https://github.com/user-attachments/assets/03001504-d84c-4a5c-85bc-ae9f8518e945)| ![onboard_lipo_charger](https://github.com/user-attachments/assets/ee6690be-31ec-40cd-a2bd-618d3efd3ad6)|
+
+| Soil Probe    | BME680        | BFF LiPo Conn| Batt Monitor   | QtPy to Brd   | Test Points   |
+|---------------|---------------|---------------|---------------|---------------|---------------|
+| ![soil_moisture_detector](https://github.com/user-attachments/assets/3d8ec207-8e4a-4253-9d5b-6656d79c7ac4| ![bme680](https://github.com/user-attachments/assets/3b5c076a-b7cd-4c1b-8d07-61b380ec3ba7)| ![bff_lipo_connector](https://github.com/user-attachments/assets/7fb17d11-f876-4950-9a34-def3e16dc451)| ![monitored_battery_connector](https://github.com/user-attachments/assets/51e9c516-6eec-4c05-93b9-3079225d4b45)| ![qtpy_to_board_qwiik_connection](https://github.com/user-attachments/assets/c375552e-94bc-470d-b216-b53053bd7008)| ![test_points](https://github.com/user-attachments/assets/7c40e494-5bac-458b-b12e-10a01efabb1d)|
+
+
+
+
+
 
 The code accommodates adding hardware, detecting it, and using it automatically
 It also allows the hardware to be on existing I2C pins or a STEMMA QT connector.
