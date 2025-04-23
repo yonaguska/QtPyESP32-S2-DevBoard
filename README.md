@@ -59,7 +59,7 @@ The main code can upload values via WiFi or LoRa; modules exist for each.
 **This code was built for CircuitPython 8 and upgraded for version 9.
 
 ## QtPy ESP32-S2
-![QT Py ESP32-S2](https://www.adafruit.com/product/5325)
+![Pinout](https://github.com/user-attachments/assets/caeb8cc6-a78f-4118-908b-a5d25b4c8360)
 
 >>> dir(board)
 ['__class__', '__name__', 'A0', 'A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7',
@@ -68,6 +68,10 @@ The main code can upload values via WiFi or LoRa; modules exist for each.
 'NEOPIXEL_POWER', 'RX', 'SCK', 'SCL', 'SCL1', 'SDA', 'SDA1', 'SPI',
 'STEMMA_I2C', 'TX', 'UART', 'board_id']
 >>>
+>>> 
+## QT Py ESP32-S2 DOCUMENTATION
+[Adafruit QT Py ESP32-S2 Pinout.pdf](https://github.com/user-attachments/files/19859913/Adafruit.QT.Py.ESP32-S2.Pinout.pdf)
+
 
 # BASIC OPERATION OF THE POWER SYSTEM
 
@@ -106,6 +110,7 @@ There's a connector for the attaching an external battery. It's labeled 12V but 
 Sensor and other peripherals are connected to the QT Py's I2C STEMMA QT Qwiik connector. (NOTE: to use the DS3231, you must run a STEMMA QT cable from the QT Py to one of the two Qwiik connectors on the board, because it's not connected to the SDA/SCL pins of the QT Py). Search Adafruit for stemma cables to learn more, JST SH 4 pin connectors.
     
 ## BOARD LEDS
+![LEDs](https://github.com/user-attachments/assets/b747277a-76f4-4818-a4ea-40c473ca6564)
 
 There are two onboard LEDS used to monitor the operation of the TPL5110. 
   - The GREEN LED indicates there is power to the QT Py.
