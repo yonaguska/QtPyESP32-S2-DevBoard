@@ -70,7 +70,7 @@ The main code can upload values via WiFi or LoRa; modules exist for each.
 >>>
 >>> 
 ## QT Py ESP32-S2 DOCUMENTATION
-[Adafruit QT Py ESP32-S2 Pinout.pdf](https://github.com/user-attachments/files/19859913/Adafruit.QT.Py.ESP32-S2.Pinout.pdf)
+[Adafruit QT Py ESP32-S2 Product Page](https://www.adafruit.com/product/5325)
 
 
 # BASIC OPERATION OF THE POWER SYSTEM
