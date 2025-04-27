@@ -2,17 +2,17 @@
 # If you put them in the code you risk committing that info or sharing it
 
 secrets = {
-    'ssid' : 'Gitli',
-    'password' : 'Barabajagal1950',
+    'ssid' : 'YOUR_WIFI_SSID',
+    'password' : 'YOUR_WIFI_PASSWORD',
 
     # 'broker' : 'io.adafruit.com',
     'port' : 1883,
-    #'aio_username' : "Yonaguska",
-    #'aio_key' : '76ef821a0cda4d5188c1888825a69598',
-    'location' : 'Nevada, TX, US',
+    #'aio_username' : "YOUR_AIO_USERNAME",
+    #'aio_key' : 'YOUR_AIO_KEY',
+    'location' : 'YOUR_CITY_STATE_COUNTRY',
 
 
-    'broker' : '10.217.1.132',
-    #'user' : 'yonaguska',
-    #'pass' : 'gitli1435',
+    'broker' : 'YOUR_BROKER_IP',
+    #'user' : 'YOUR_BROKER_USERNAME',
+    #'pass' : 'YOUR_BROKER_PASSWORD,
 }
