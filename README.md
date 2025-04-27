@@ -257,4 +257,3 @@ Github for yonaguska (me)
 
   https://github.com/yonaguska/QtPy_ESP32-S2
  
-Adding this line 
