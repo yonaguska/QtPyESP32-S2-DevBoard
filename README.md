@@ -98,7 +98,8 @@ The LiIon Charger BFF serves to power the QT Py ESP32, or when a USB cable is pl
                ->  QT Py ESP32 powered by LiPo and outputs 3V
   
 ## SENSOR AND PERIPHERAL CONNECTIONS
-  
+![image](https://github.com/user-attachments/assets/40fd85b3-ea4b-4a93-bc86-727f244dd2f7)
+
 The SD card connects via SPI, QT Py's MO/MI/SCK pins drive it and QT Py's TX pin selects it.
   
 There is a header to support an untested LoRa module, connected by SPI. It also uses the QT Py's MO/MI/SCK pins, gets selected  by QT Py's SCL pin and reset by the SDA pin. (NOTE: we use the STEMMA QT I2C connector for our sensors and other peripherals,  so we sacrificed these pins to LoRa). The QT Py's A0 pin can be used to supply a signal to either the LoRa module's EN or G0 pin, as selected by a header jumper on the board. This is a work in progress.
